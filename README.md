@@ -55,3 +55,7 @@ El script `proceso_mdm.sql` sigue una estrategia de consolidación basada en las
     -   Para cada grupo, se selecciona la "mejor" información disponible:
         -   **Nombre**: Se escoge el nombre más largo, asumiendo que es el más completo.
         -   **Teléfono**: Se escoge el primer número de teléfono válido encontrado dentro del grupo.
+
+## Próximos Pasos
+- [ ] Replicar la lógica del script `proceso_mdm.sql` en una aplicación de consola Java usando JDBC.
+- [ ] Desarrollar una API REST con Spring Boot para exponer los datos de la tabla `cliente_maestro`.
