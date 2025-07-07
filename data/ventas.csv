@@ -1,6 +1,6 @@
 id_venta,nombre_cliente,direccion,email,telefono
-1001,Ana Garcia Perez,C/ Mayor 15, 28013 Madrid,ana.garcia@email.com,611222333
-1002,Carlos Sanchez,Avda. Diagonal, 200, Barcelona,c.sanchez@workplace.net,34655888777
-1003,Laura Fernandez Ruiz,Plaza Nueva, 5, 41004 Sevilla,laura.f.r@geemail.com,633444555
-1004,Pedro Ramirez,Calle Falsa 123, Valencia,pramirez@email.com,600900800
-1005,ANA GARCIA,Calle Mayor, 15, Madrid,ana.garcia@email.com,
+1001,Ana Garcia Perez,"C/ Mayor 15, 28013 Madrid",ana.garcia@email.com,611222333
+1002,Carlos Sanchez,"Avda. Diagonal, 200, Barcelona",c.sanchez@workplace.net,34655888777
+1003,Laura Fernandez Ruiz,"Plaza Nueva, 5, 41004 Sevilla",laura.f.r@geemail.com,633444555
+1004,Pedro Ramirez,"Calle Falsa 123, Valencia",pramirez@email.com,600900800
+1005,ANA GARCIA,"Calle Mayor, 15, Madrid",ana.garcia@email.com,

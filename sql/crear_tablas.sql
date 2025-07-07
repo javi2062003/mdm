@@ -1,5 +1,5 @@
 CREATE TABLE VENTAS (
-    id_venta SERIAL INT primary key,
+    id_venta SERIAL primary key,
     nombre_cliente VARCHAR (255),
     direccion VARCHAR (255),
     email VARCHAR(255),
@@ -23,8 +23,8 @@ CREATE TABLE MARKETING (
 );
 
 CREATE TABLE cliente_maestro (
-    id_cliente SERIAL INT PRIMARY KEY,
-    nombre_cliente_completo VARCHAR(255),
+    id_cliente SERIAL PRIMARY KEY,
+    nombre_completo VARCHAR(255),
     email_confirmado VARCHAR(255),
     telefono_contacto VARCHAR(255),
     fecha_creacion TIMESTAMP,
