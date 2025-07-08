@@ -1,3 +1,5 @@
+package com.practica.mdm;
+
 public class clienteOrigen {
     private String nombre;
     private String email;

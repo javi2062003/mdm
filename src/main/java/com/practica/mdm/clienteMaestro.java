@@ -1,3 +1,5 @@
+package com.practica.mdm;
+
 public class clienteMaestro {
     private String nombreCompleto;
     private String emailPrincipal;
