@@ -14,14 +14,14 @@ public class clienteOrigen {
         return nombre;
     }
 
-    public setNombre(String nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     public String getEmail() {
         return email;
     }
 
-    public setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
@@ -29,7 +29,7 @@ public class clienteOrigen {
         return telefono;
     }
 
-    public setTelefono(String telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 }

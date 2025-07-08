@@ -10,18 +10,18 @@ public class clienteMaestro {
 
     }
     
-    public String getNombre() {
+    public String getNombreCompleto() {
         return nombreCompleto;
     }
 
-    public setNombreCompleto(String nombreCompleto) {
+    public void setNombreCompleto(String nombreCompleto) {
         this.nombreCompleto = nombreCompleto;
     }
     public String getEmailPrincipal() {
         return emailPrincipal;
     }
 
-    public setEmailPrincipal(String emailPrincipal) {
+    public void setEmailPrincipal(String emailPrincipal) {
         this.emailPrincipal = emailPrincipal;
     }
 
@@ -29,7 +29,7 @@ public class clienteMaestro {
         return telefonoPrincipal;
     }
 
-    public setTelefonoPrincipal(String telefonoPrincipal) {
+    public void setTelefonoPrincipal(String telefonoPrincipal) {
         this.telefonoPrincipal = telefonoPrincipal;
     }
 }
