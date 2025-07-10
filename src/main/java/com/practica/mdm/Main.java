@@ -10,6 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import java.sql.Statement;
+
 public class Main {
 public static void main(String[] args) {
     System.out.println("Iniciando la conexión...");
@@ -104,6 +106,37 @@ public static void main(String[] args) {
                 goldenRecords.add(goldenRecord);
             }
             System.out.println("FASE TRANSFORM COMPLETADA. Total de Golden Records creados: " + goldenRecords.size());
+            System.out.println("FASE LOAD: Iniciando carga en la tabla cliente_maestro...");
+
+            System.out.println(" -> Vaciando la tabla cliente_maestro...");
+            try (Statement stmt = conn.createStatement()) { // Solo declaramos el recurso que se debe cerrar
+                
+                // La ejecución de la sentencia va DENTRO del bloque try
+                stmt.executeUpdate("TRUNCATE TABLE cliente_maestro RESTART IDENTITY;");
+                
+                System.out.println(" -> Tabla vaciada con éxito.");
+            }
+
+            String sqlInsert = "INSERT INTO cliente_maestro (nombre_completo, email_confirmado, telefono_contacto, fecha_creacion, ultima_actualizacion) VALUES (?, ?, ?, NOW(), NOW())";
+
+            try (PreparedStatement pstmt = conn.prepareStatement(sqlInsert)) {
+                
+                for (clienteMaestro record : goldenRecords) {
+                    pstmt.setString(1, record.getNombreCompleto());
+                    pstmt.setString(2, record.getEmailPrincipal());
+                    pstmt.setString(3, record.getTelefonoPrincipal());
+                    
+                    pstmt.addBatch();
+                }
+
+                int[] resultados = pstmt.executeBatch();
+                
+                System.out.println(" -> Se han insertado " + resultados.length + " registros en la base de datos.");
+            }
+
+            System.out.println("\n==============================================");
+            System.out.println("✅ ¡PROCESO MDM COMPLETADO CON ÉXITO!");
+            System.out.println("==============================================");
 
         } catch (SQLException e) {
             System.err.println("❌ Error en la conexión o consulta:");
