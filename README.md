@@ -57,5 +57,5 @@ El script `proceso_mdm.sql` sigue una estrategia de consolidación basada en las
         -   **Teléfono**: Se escoge el primer número de teléfono válido encontrado dentro del grupo.
 
 ## Próximos Pasos
-- [ ] Replicar la lógica del script `proceso_mdm.sql` en una aplicación de consola Java usando JDBC.
+- [✔] Replicar la lógica del script `proceso_mdm.sql` en una aplicación de consola Java usando JDBC.
 - [ ] Desarrollar una API REST con Spring Boot para exponer los datos de la tabla `cliente_maestro`.
