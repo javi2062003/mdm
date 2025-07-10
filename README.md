@@ -19,7 +19,7 @@ Para replicar este proyecto y ejecutar el proceso, sigue estos pasos:
 
 1.  **Clonar el Repositorio (Opcional)**
     ```bash
-    git clone [URL-de-tu-repositorio-github]
+    git clone https://github.com/javi2062003/mdm
     cd PRACTICA-MDM
     ```
 
