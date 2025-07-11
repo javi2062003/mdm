@@ -58,4 +58,4 @@ El script `proceso_mdm.sql` sigue una estrategia de consolidación basada en las
 
 ## Próximos Pasos
 - [✔] Replicar la lógica del script `proceso_mdm.sql` en una aplicación de consola Java usando JDBC.
-- [ ] Desarrollar una API REST con Spring Boot para exponer los datos de la tabla `cliente_maestro`.
+- [✔] Desarrollar una API REST con Spring Boot para exponer los datos de la tabla `cliente_maestro`.
